@@ -9,6 +9,8 @@ export enum GlobalStylesTheme {
   fontSizeBase = '1rem',
   fontWeightBase = '400',
   fontWeightBolder = 'bolder',
+  gridColumns = '12',
+  gridGutter = '1rem',
   headingsMarginBottom = '.5rem',
   info = '#17a2b8',
   labelMarginBottom = '.5rem',

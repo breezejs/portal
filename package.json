@@ -19,6 +19,7 @@
     "express": "^4.16.4",
     "http-proxy-middleware": "^0.19.1",
     "next": "^8.0.3",
+    "polished": "^3.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "redux": "^4.0.1",

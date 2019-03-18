@@ -1,7 +1,9 @@
 import App, {Container, NextAppContext} from 'next/app';
 import Head from 'next/head';
 import React, {Fragment} from 'react';
+import Toolbar from '../components/Toolbar';
 import GlobalStyles from '../core/GlobalStyles';
+import Wrapper from '../core/Wrapper';
 
 class MyApp extends App {
   public static async getInitialProps ({Component, ctx}: NextAppContext) {
@@ -23,7 +25,9 @@ class MyApp extends App {
 
     const pageTitle: string[] = title || [];
 
-    pageTitle.push(this.title);
+    if (!pageTitle.includes(this.title)) {
+      pageTitle.push(this.title);
+    }
 
     return pageTitle.join(' < ');
   }
@@ -42,7 +46,11 @@ class MyApp extends App {
         <Container>
           <GlobalStyles />
 
-          <Component {...pageProps} />
+          <Toolbar />
+
+          <Wrapper>
+            <Component {...pageProps} />
+          </Wrapper>
         </Container>
       </Fragment>
     );
