@@ -38,5 +38,6 @@ export enum GlobalStylesTheme {
   success = '#28a745',
   tableCaptionColour = '#6c757d',
   tableCellPadding = '0.75rem',
-  warning = '#ffc107'
+  warning = '#ffc107',
+  white = '#fff'
 }
