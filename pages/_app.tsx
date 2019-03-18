@@ -1,6 +1,7 @@
 import App, {Container, NextAppContext} from 'next/app';
 import Head from 'next/head';
 import React, {Fragment} from 'react';
+import Logo from '../components/Logo';
 import Toolbar from '../components/Toolbar';
 import GlobalStyles from '../core/GlobalStyles';
 import Wrapper from '../core/Wrapper';
@@ -46,7 +47,9 @@ class MyApp extends App {
         <Container>
           <GlobalStyles />
 
-          <Toolbar />
+          <Toolbar>
+            <Logo>{this.title}</Logo>
+          </Toolbar>
 
           <Wrapper>
             <Component {...pageProps} />

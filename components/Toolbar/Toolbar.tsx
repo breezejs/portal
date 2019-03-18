@@ -21,7 +21,7 @@ const Header = styled.header`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: .5rem 1rem;
+  padding: .5rem ${GlobalStylesTheme.gridGutter};
   position: relative;
   user-select: none;
 `;

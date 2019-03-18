@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Grid from '../components/Grid';
 import GridCol from '../components/GridCol';
-import Typography from '../components/Typography/Typography';
+import Typography from '../components/Typography';
 
 function Index () {
   return (
