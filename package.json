@@ -38,6 +38,7 @@
     "@types/styled-components": "^4.1.12",
     "@zeit/next-typescript": "^1.1.1",
     "babel-plugin-styled-components": "^1.10.0",
+    "enzyme": "^3.9.0",
     "fork-ts-checker-webpack-plugin": "^1.0.0",
     "jest": "^24.5.0",
     "tslint": "^5.14.0",

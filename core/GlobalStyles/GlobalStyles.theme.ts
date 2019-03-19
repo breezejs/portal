@@ -1,4 +1,5 @@
 export enum GlobalStylesTheme {
+  black = '#000',
   bodyBg = '#fff',
   bodyColour = '#212529',
   danger = '#dc3545',
@@ -39,5 +40,7 @@ export enum GlobalStylesTheme {
   tableCaptionColour = '#6c757d',
   tableCellPadding = '0.75rem',
   warning = '#ffc107',
-  white = '#fff'
+  white = '#fff',
+  zIndexBackdrop = '1000',
+  zIndexSpinner = '1100'
 }
