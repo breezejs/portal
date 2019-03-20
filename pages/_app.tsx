@@ -1,24 +1,14 @@
-import App, {Container, NextAppContext} from 'next/app';
+import App, {Container} from 'next/app';
 import Head from 'next/head';
-import React, {Fragment} from 'react';
+import React from 'react';
+import {Provider} from 'react-redux';
 import Logo from '../components/Logo';
 import Toolbar from '../components/Toolbar';
 import GlobalStyles from '../core/GlobalStyles';
+import {IAppWithReduxProps, withRedux} from '../core/store';
 import Wrapper from '../core/Wrapper';
 
-class MyApp extends App {
-  public static async getInitialProps ({Component, ctx}: NextAppContext) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-
-    return {
-      pageProps
-    };
-  }
-
+class MyApp extends App<IAppWithReduxProps> {
   private title = 'BreezeJS';
 
   private get pageTitle () {
@@ -34,10 +24,10 @@ class MyApp extends App {
   }
 
   public render () {
-    const {Component, pageProps} = this.props;
+    const {Component, pageProps, reduxStore} = this.props;
 
     return (
-      <Fragment>
+      <Provider store={reduxStore}>
         <Head>
           <title>{this.pageTitle}</title>
 
@@ -55,9 +45,9 @@ class MyApp extends App {
             <Component {...pageProps} />
           </Wrapper>
         </Container>
-      </Fragment>
+      </Provider>
     );
   }
 }
 
-export default MyApp;
+export default withRedux(MyApp);
