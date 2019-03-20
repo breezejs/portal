@@ -4,6 +4,7 @@ import React from 'react';
 import {Provider} from 'react-redux';
 import Logo from '../components/Logo';
 import Toolbar from '../components/Toolbar';
+import Loading from '../containers/Loading';
 import GlobalStyles from '../core/GlobalStyles';
 import {IAppWithReduxProps, withRedux} from '../core/store';
 import Wrapper from '../core/Wrapper';
@@ -36,6 +37,8 @@ class MyApp extends App<IAppWithReduxProps> {
 
         <Container>
           <GlobalStyles />
+
+          <Loading />
 
           <Toolbar>
             <Logo>{this.title}</Logo>

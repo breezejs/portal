@@ -5,13 +5,13 @@ import {initStore} from './store';
 const isServer = typeof window === 'undefined';
 const __NEXT_REDUX_STORE__ = '__NEXT_REDUX_STORE__';
 
-function getOrCreateStore (initialState: any) {
+function getOrCreateStore () {
   if (isServer) {
-    return initStore(initialState);
+    return initStore();
   }
 
   if (!window[__NEXT_REDUX_STORE__]) {
-    window[__NEXT_REDUX_STORE__] = initStore(initialState);
+    window[__NEXT_REDUX_STORE__] = initStore();
   }
 
   return window[__NEXT_REDUX_STORE__];
@@ -27,7 +27,7 @@ export interface IAppWithReduxProps extends AppProps, DefaultAppIProps {
 export function withRedux (Application: ComponentClass<IAppWithReduxProps>) {
   return class WithRedux extends Component<IAppWithReduxProps> {
     public static async getInitialProps (appContext: NextAppContext) {
-      const reduxStore = getOrCreateStore({});
+      const reduxStore = getOrCreateStore();
 
       (appContext.ctx as any).reduxStore = reduxStore;
 
@@ -48,7 +48,7 @@ export function withRedux (Application: ComponentClass<IAppWithReduxProps>) {
     constructor (props: IAppWithReduxProps) {
       super(props);
 
-      this.reduxStore = getOrCreateStore(props.initialReduxState);
+      this.reduxStore = getOrCreateStore();
     }
 
     public render () {

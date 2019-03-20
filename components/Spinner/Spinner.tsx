@@ -1,5 +1,5 @@
 import {darken} from 'polished';
-import React, {Fragment, memo} from 'react';
+import React, {memo} from 'react';
 import styled from 'styled-components';
 import {GlobalStylesTheme} from '../../core/GlobalStyles';
 
@@ -39,19 +39,9 @@ const SpinnerElement = styled.div`
   }
 `;
 
-interface ISpinnerProps {
-  show: boolean;
-}
-
-function Spinner ({show}: ISpinnerProps) {
-  function renderSpinner () {
-    return (
-      <SpinnerElement />
-    );
-  }
-
+function Spinner () {
   return (
-    <Fragment>{show && renderSpinner()}</Fragment>
+    <SpinnerElement />
   );
 }
 

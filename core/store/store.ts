@@ -3,12 +3,11 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 import thunkMiddleware from 'redux-thunk';
 import {loadingReducer} from '../../containers/Loading';
 
-export function initStore (initialState: any) {
+export function initStore () {
   return createStore(
     combineReducers({
-      loadingReducer
+      loading: loadingReducer
     }),
-    initialState,
     composeWithDevTools(
       applyMiddleware(thunkMiddleware)
     )

@@ -1,6 +1,7 @@
 import {ILoadingActions, LoadingActionTypes} from './Loading.actions';
+import {ILoadingState} from './Loading.state';
 
-export const initialState = {
+export const initialState: ILoadingState = {
   loading: false
 };
 
