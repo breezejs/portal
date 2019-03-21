@@ -1,8 +1,38 @@
 import Link from 'next/link';
-import {rgba} from 'polished';
+import {darken, rgba} from 'polished';
 import React, {memo, ReactNode} from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import {GlobalStylesTheme} from '../../core/GlobalStyles';
+
+const loadingAnimation = css`
+  @keyframes loading {
+    0% {
+      background-position-x: 0;
+    }
+
+    40%,
+    100% {
+      background-position-x: -200%;
+    }
+  }
+`;
+
+const loadingStyles = css`
+  animation: 2s ease-in-out loading infinite;
+  background-image: linear-gradient(
+    110deg,
+    ${GlobalStylesTheme.light} 73%,
+    ${darken(0.025, GlobalStylesTheme.light)} 75%,
+    ${GlobalStylesTheme.light} 77%,
+    ${GlobalStylesTheme.light} 78%,
+    ${darken(0.025, GlobalStylesTheme.light)} 84%,
+    ${darken(0.025, GlobalStylesTheme.light)} 88%,
+    ${GlobalStylesTheme.light} 94%,
+    ${GlobalStylesTheme.light} 100%
+  );
+  background-position: 0 center;
+  background-size: 200% 100%;
+`;
 
 const Article = styled.article`
   background-color: ${GlobalStylesTheme.light};
@@ -39,8 +69,30 @@ const Article = styled.article`
 `;
 
 const Content = styled.div`
+  ${loadingAnimation}
   position: relative;
   z-index: 1;
+
+  :empty {
+    ::after {
+      ${loadingStyles}
+      animation-delay: 50ms;
+      content: '';
+      display: block;
+      height: 24px;
+      margin-bottom: ${GlobalStylesTheme.paragraphsMarginBottom};
+      width: 92%;
+    }
+
+    ::before {
+      ${loadingStyles}
+      content: '';
+      display: block;
+      height: 28px;
+      margin-bottom: ${GlobalStylesTheme.headingsMarginBottom};
+      width: 100%;
+    }
+  }
 `;
 
 const Container = styled.div`
@@ -52,12 +104,17 @@ const Container = styled.div`
 `;
 
 const Figure = styled.figure`
+  ${loadingAnimation}
   height: 100%;
   left: 0;
   margin: 0;
   position: absolute;
   top: 0;
   width: 100%;
+
+  :empty {
+    ${loadingStyles}
+  }
 `;
 
 const Header = styled.header`
@@ -69,7 +126,7 @@ const Header = styled.header`
   top: auto;
 
   ::before {
-    background-image: linear-gradient(to bottom, transparent, ${rgba(GlobalStylesTheme.light, .9)} 60%);
+    background-image: linear-gradient(to bottom, transparent, ${rgba(GlobalStylesTheme.dark, .8)} 60%);
     bottom: -2px;
     content: '';
     height: 150%;
@@ -82,7 +139,7 @@ const Header = styled.header`
 const TileLink = styled.a`
   backface-visibility: hidden;
   border: 3px solid transparent;
-  color: ${GlobalStylesTheme.bodyColour};
+  color: ${GlobalStylesTheme.white};
   cursor: pointer;
   display: block;
   transition: background-color, border-color, color;
@@ -91,7 +148,7 @@ const TileLink = styled.a`
 
   :hover {
     border-color: ${GlobalStylesTheme.primary};
-    color: ${GlobalStylesTheme.bodyColour};
+    color: ${GlobalStylesTheme.white};
   }
 `;
 
@@ -115,14 +172,15 @@ interface ITileProps {
   as?: string;
   children: ReactNode;
   href: string;
+  loading?: boolean;
   src?: string;
 }
 
-function Tile ({as, children, href, src}: ITileProps) {
+function Tile ({as, children, href, loading = true, src}: ITileProps) {
   function displayImage () {
     return (
       <Figure>
-        <Image src={src} />
+        {loading && <Image src={src} />}
       </Figure>
     );
   }
@@ -135,7 +193,7 @@ function Tile ({as, children, href, src}: ITileProps) {
             {src && displayImage()}
 
             <Header>
-              <Content>{children}</Content>
+              <Content>{loading && children}</Content>
             </Header>
           </Container>
         </Article>
