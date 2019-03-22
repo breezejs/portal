@@ -1,10 +1,19 @@
 import React, {Fragment} from 'react';
+import {connect} from 'react-redux';
+import {Action} from 'redux';
+import {ThunkDispatch} from 'redux-thunk';
 import Grid from '../components/Grid';
 import GridCol from '../components/GridCol';
-import Tile from '../components/Tile';
 import Typography from '../components/Typography';
+import ArticleList, {IArticleListState} from '../containers/ArticleList';
+import {IState} from '../core/store';
 
-function Index () {
+interface IIndexProps {
+  articles: IArticleListState;
+  dispatch: ThunkDispatch<{}, undefined, Action>;
+}
+
+function Index (props: IIndexProps) {
   return (
     <Fragment>
       <Grid>
@@ -16,110 +25,24 @@ function Index () {
           <Typography component='p' variant='p'>More content will follow...</Typography>
         </GridCol>
 
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
-
-        <GridCol sm={6} md={4} lg={3}>
-          <Tile href='path/to/somewhere' src='https://via.placeholder.com/480x480/999/000?text=Placeholder'>
-            <Typography component='h2' variant='h4'>This is a tile</Typography>
-
-            <Typography component='p' variant='p'>It looks very nice</Typography>
-          </Tile>
-        </GridCol>
+        {props.articles && <ArticleList articles={props.articles.articles} loading={props.articles.loading} />}
       </Grid>
     </Fragment>
   );
 }
 
-Index.getInitialProps = () => ({
-  title: [
-    'Home'
-  ]
+Index.getInitialProps = ({store}: any) => {
+  console.log(store);
+
+  return {
+    title: [
+      'Home'
+    ]
+  };
+};
+
+const mapStateToProps = ({articles}: IState) => ({
+  articles
 });
 
-export default Index;
+export default connect(mapStateToProps)(Index);
