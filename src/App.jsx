@@ -15,7 +15,7 @@ function App () {
         <Logo>{title}</Logo>
       </Toolbar>
 
-      <Wrapper />
+      <Wrapper>Hello world</Wrapper>
     </Fragment>
   );
 }

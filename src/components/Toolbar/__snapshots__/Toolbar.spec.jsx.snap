@@ -85,122 +85,133 @@ exports[`Toolbar with dark theme should render with a child components 1`] = `
 <Toolbar
   theme="dark"
 >
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bwzfXH",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "
-  ",
-            [Function],
-            "
-",
-          ],
-        },
-        "displayName": "styled.header",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bwzfXH",
-        "target": "header",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+  <styled.header
     theme="dark"
   >
-    <header
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.header",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "header",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      theme="dark"
     >
-      <Logo>
-        <StyledComponent
-          component="h1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "compare": null,
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": true,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
+      <header
+        className="c0"
+      >
+        <Logo>
+          <StyledComponent
+            component="h1"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "compare": null,
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
   margin-bottom: 0;
 ",
-                ],
-              },
-              "displayName": "Styled(Component)",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": Object {
-                "$$typeof": Symbol(react.memo),
-                "compare": null,
-                "type": [Function],
-              },
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
+                  ],
+                },
+                "displayName": "Styled(Component)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
             }
-          }
-          forwardedRef={null}
-          variant="h4"
-        >
-          <Typography
-            className="c1"
-            component="h1"
+            forwardedRef={null}
             variant="h4"
           >
-            <StyledComponent
+            <Typography
               className="c1"
               component="h1"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-ifAKCX",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-    ",
-                      [Function],
-                      "
-  ",
-                    ],
-                  },
-                  "displayName": "styled.h1",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-ifAKCX",
-                  "target": "h1",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
               variant="h4"
             >
-              <h1
-                className="c1 c2"
+              <styled.h1
+                className="c1"
+                component="h1"
+                variant="h4"
               >
-                Test
-              </h1>
-            </StyledComponent>
-          </Typography>
-        </StyledComponent>
-      </Logo>
-    </header>
-  </StyledComponent>
+                <StyledComponent
+                  className="c1"
+                  component="h1"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-ifAKCX",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+    ",
+                          [Function],
+                          "
+  ",
+                        ],
+                      },
+                      "displayName": "styled.h1",
+                      "foldedComponentIds": Array [],
+                      "propTypes": Object {},
+                      "render": [Function],
+                      "styledComponentId": "sc-ifAKCX",
+                      "target": "h1",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  variant="h4"
+                >
+                  <h1
+                    className="c1 c2"
+                  >
+                    Test
+                  </h1>
+                </StyledComponent>
+              </styled.h1>
+            </Typography>
+          </StyledComponent>
+        </Logo>
+      </header>
+    </StyledComponent>
+  </styled.header>
 </Toolbar>
 `;
 
@@ -238,11 +249,7 @@ exports[`Toolbar with default theme should have the correct css styles 1`] = `
 />
 `;
 
-exports[`Toolbar with default theme should render 1`] = `
-<styled.header
-  theme="light"
-/>
-`;
+exports[`Toolbar with default theme should render 1`] = `<styled.header />`;
 
 exports[`Toolbar with default theme should render with a child components 1`] = `
 .c1 {
@@ -287,122 +294,133 @@ exports[`Toolbar with default theme should render with a child components 1`] = 
 }
 
 <Toolbar>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bwzfXH",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "
-  ",
-            [Function],
-            "
-",
-          ],
-        },
-        "displayName": "styled.header",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bwzfXH",
-        "target": "header",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+  <styled.header
     theme="light"
   >
-    <header
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.header",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "header",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      theme="light"
     >
-      <Logo>
-        <StyledComponent
-          component="h1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "compare": null,
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": true,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
+      <header
+        className="c0"
+      >
+        <Logo>
+          <StyledComponent
+            component="h1"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "compare": null,
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
   margin-bottom: 0;
 ",
-                ],
-              },
-              "displayName": "Styled(Component)",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": Object {
-                "$$typeof": Symbol(react.memo),
-                "compare": null,
-                "type": [Function],
-              },
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
+                  ],
+                },
+                "displayName": "Styled(Component)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
             }
-          }
-          forwardedRef={null}
-          variant="h4"
-        >
-          <Typography
-            className="c1"
-            component="h1"
+            forwardedRef={null}
             variant="h4"
           >
-            <StyledComponent
+            <Typography
               className="c1"
               component="h1"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-    ",
-                      [Function],
-                      "
-  ",
-                    ],
-                  },
-                  "displayName": "styled.h1",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-htpNat",
-                  "target": "h1",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
               variant="h4"
             >
-              <h1
-                className="c1 c2"
+              <styled.h1
+                className="c1"
+                component="h1"
+                variant="h4"
               >
-                Test
-              </h1>
-            </StyledComponent>
-          </Typography>
-        </StyledComponent>
-      </Logo>
-    </header>
-  </StyledComponent>
+                <StyledComponent
+                  className="c1"
+                  component="h1"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+    ",
+                          [Function],
+                          "
+  ",
+                        ],
+                      },
+                      "displayName": "styled.h1",
+                      "foldedComponentIds": Array [],
+                      "propTypes": Object {},
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": "h1",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  variant="h4"
+                >
+                  <h1
+                    className="c1 c2"
+                  >
+                    Test
+                  </h1>
+                </StyledComponent>
+              </styled.h1>
+            </Typography>
+          </StyledComponent>
+        </Logo>
+      </header>
+    </StyledComponent>
+  </styled.header>
 </Toolbar>
 `;
 
@@ -491,121 +509,132 @@ exports[`Toolbar with light theme should render with a child components 1`] = `
 <Toolbar
   theme="light"
 >
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bwzfXH",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "
-  ",
-            [Function],
-            "
-",
-          ],
-        },
-        "displayName": "styled.header",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bwzfXH",
-        "target": "header",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+  <styled.header
     theme="light"
   >
-    <header
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.header",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "header",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      theme="light"
     >
-      <Logo>
-        <StyledComponent
-          component="h1"
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "compare": null,
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
-                "isStatic": true,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
+      <header
+        className="c0"
+      >
+        <Logo>
+          <StyledComponent
+            component="h1"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "compare": null,
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
   margin-bottom: 0;
 ",
-                ],
-              },
-              "displayName": "Styled(Component)",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
-              "target": Object {
-                "$$typeof": Symbol(react.memo),
-                "compare": null,
-                "type": [Function],
-              },
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
+                  ],
+                },
+                "displayName": "Styled(Component)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
             }
-          }
-          forwardedRef={null}
-          variant="h4"
-        >
-          <Typography
-            className="c1"
-            component="h1"
+            forwardedRef={null}
             variant="h4"
           >
-            <StyledComponent
+            <Typography
               className="c1"
               component="h1"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-bxivhb",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      "
-    ",
-                      [Function],
-                      "
-  ",
-                    ],
-                  },
-                  "displayName": "styled.h1",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-bxivhb",
-                  "target": "h1",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
               variant="h4"
             >
-              <h1
-                className="c1 c2"
+              <styled.h1
+                className="c1"
+                component="h1"
+                variant="h4"
               >
-                Test
-              </h1>
-            </StyledComponent>
-          </Typography>
-        </StyledComponent>
-      </Logo>
-    </header>
-  </StyledComponent>
+                <StyledComponent
+                  className="c1"
+                  component="h1"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bxivhb",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+    ",
+                          [Function],
+                          "
+  ",
+                        ],
+                      },
+                      "displayName": "styled.h1",
+                      "foldedComponentIds": Array [],
+                      "propTypes": Object {},
+                      "render": [Function],
+                      "styledComponentId": "sc-bxivhb",
+                      "target": "h1",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  variant="h4"
+                >
+                  <h1
+                    className="c1 c2"
+                  >
+                    Test
+                  </h1>
+                </StyledComponent>
+              </styled.h1>
+            </Typography>
+          </StyledComponent>
+        </Logo>
+      </header>
+    </StyledComponent>
+  </styled.header>
 </Toolbar>
 `;

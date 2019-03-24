@@ -54,9 +54,10 @@ function buildComponent (properties) {
   return createElement(Component, properties);
 }
 
-function Typography ({children, component, variant}) {
+function Typography ({children, className, component, variant}) {
   const params = {
     children,
+    className,
     component,
     variant
   };
@@ -68,8 +69,13 @@ function Typography ({children, component, variant}) {
 
 Typography.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   component: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']).isRequired,
   variant: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'lead', 'p']).isRequired
+};
+
+Typography.defaultProps = {
+  className: null
 };
 
 export default memo(Typography);
