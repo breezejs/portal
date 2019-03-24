@@ -152,4 +152,4 @@ jspm_packages/
 .env
 
 # Project files
-.next
+build
