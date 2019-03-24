@@ -1,0 +1,611 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar with dark theme should have the correct css styles 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #343a40;
+  background-image: linear-gradient( 45deg, #343a40 25%, #2f353a 25%, #2f353a 50%, #343a40 50%, #343a40 75%, #2f353a 75%, #2f353a 100% );
+  background-size: 28.28px 28.28px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<header
+  className="c0"
+/>
+`;
+
+exports[`Toolbar with dark theme should render 1`] = `
+<styled.header
+  theme="dark"
+/>
+`;
+
+exports[`Toolbar with dark theme should render with a child components 1`] = `
+.c1 {
+  margin-bottom: 0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #343a40;
+  background-image: linear-gradient( 45deg, #343a40 25%, #2f353a 25%, #2f353a 50%, #343a40 50%, #343a40 75%, #2f353a 75%, #2f353a 100% );
+  background-size: 28.28px 28.28px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  font-size: 1.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+<Toolbar
+  theme="dark"
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.header",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "header",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme="dark"
+  >
+    <header
+      className="c0"
+    >
+      <Logo>
+        <StyledComponent
+          component="h1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "compare": null,
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  margin-bottom: 0;
+",
+                ],
+              },
+              "displayName": "Styled(Component)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "type": [Function],
+              },
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          variant="h4"
+        >
+          <Typography
+            className="c1"
+            component="h1"
+            variant="h4"
+          >
+            <StyledComponent
+              className="c1"
+              component="h1"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-ifAKCX",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+    ",
+                      [Function],
+                      "
+  ",
+                    ],
+                  },
+                  "displayName": "styled.h1",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-ifAKCX",
+                  "target": "h1",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              variant="h4"
+            >
+              <h1
+                className="c1 c2"
+              >
+                Test
+              </h1>
+            </StyledComponent>
+          </Typography>
+        </StyledComponent>
+      </Logo>
+    </header>
+  </StyledComponent>
+</Toolbar>
+`;
+
+exports[`Toolbar with default theme should have the correct css styles 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  background-image: linear-gradient( 45deg, #f8f9fa 25%, #f2f4f6 25%, #f2f4f6 50%, #f8f9fa 50%, #f8f9fa 75%, #f2f4f6 75%, #f2f4f6 100% );
+  background-size: 28.28px 28.28px;
+  color: #212529;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<header
+  className="c0"
+/>
+`;
+
+exports[`Toolbar with default theme should render 1`] = `
+<styled.header
+  theme="light"
+/>
+`;
+
+exports[`Toolbar with default theme should render with a child components 1`] = `
+.c1 {
+  margin-bottom: 0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  background-image: linear-gradient( 45deg, #f8f9fa 25%, #f2f4f6 25%, #f2f4f6 50%, #f8f9fa 50%, #f8f9fa 75%, #f2f4f6 75%, #f2f4f6 100% );
+  background-size: 28.28px 28.28px;
+  color: #212529;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  font-size: 1.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+<Toolbar>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.header",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "header",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme="light"
+  >
+    <header
+      className="c0"
+    >
+      <Logo>
+        <StyledComponent
+          component="h1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "compare": null,
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  margin-bottom: 0;
+",
+                ],
+              },
+              "displayName": "Styled(Component)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "type": [Function],
+              },
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          variant="h4"
+        >
+          <Typography
+            className="c1"
+            component="h1"
+            variant="h4"
+          >
+            <StyledComponent
+              className="c1"
+              component="h1"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+    ",
+                      [Function],
+                      "
+  ",
+                    ],
+                  },
+                  "displayName": "styled.h1",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "h1",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              variant="h4"
+            >
+              <h1
+                className="c1 c2"
+              >
+                Test
+              </h1>
+            </StyledComponent>
+          </Typography>
+        </StyledComponent>
+      </Logo>
+    </header>
+  </StyledComponent>
+</Toolbar>
+`;
+
+exports[`Toolbar with light theme should have the correct css styles 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  background-image: linear-gradient( 45deg, #f8f9fa 25%, #f2f4f6 25%, #f2f4f6 50%, #f8f9fa 50%, #f8f9fa 75%, #f2f4f6 75%, #f2f4f6 100% );
+  background-size: 28.28px 28.28px;
+  color: #212529;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<header
+  className="c0"
+/>
+`;
+
+exports[`Toolbar with light theme should render 1`] = `
+<styled.header
+  theme="light"
+/>
+`;
+
+exports[`Toolbar with light theme should render with a child components 1`] = `
+.c1 {
+  margin-bottom: 0;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  background-image: linear-gradient( 45deg, #f8f9fa 25%, #f2f4f6 25%, #f2f4f6 50%, #f8f9fa 50%, #f8f9fa 75%, #f2f4f6 75%, #f2f4f6 100% );
+  background-size: 28.28px 28.28px;
+  color: #212529;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  font-size: 1.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+}
+
+<Toolbar
+  theme="light"
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.header",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "header",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme="light"
+  >
+    <header
+      className="c0"
+    >
+      <Logo>
+        <StyledComponent
+          component="h1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "compare": null,
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bdVaJa",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  margin-bottom: 0;
+",
+                ],
+              },
+              "displayName": "Styled(Component)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bdVaJa",
+              "target": Object {
+                "$$typeof": Symbol(react.memo),
+                "compare": null,
+                "type": [Function],
+              },
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          variant="h4"
+        >
+          <Typography
+            className="c1"
+            component="h1"
+            variant="h4"
+          >
+            <StyledComponent
+              className="c1"
+              component="h1"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bxivhb",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+    ",
+                      [Function],
+                      "
+  ",
+                    ],
+                  },
+                  "displayName": "styled.h1",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bxivhb",
+                  "target": "h1",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              variant="h4"
+            >
+              <h1
+                className="c1 c2"
+              >
+                Test
+              </h1>
+            </StyledComponent>
+          </Typography>
+        </StyledComponent>
+      </Logo>
+    </header>
+  </StyledComponent>
+</Toolbar>
+`;
