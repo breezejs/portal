@@ -54,9 +54,15 @@ function buildComponent (properties) {
   return createElement(Component, properties);
 }
 
-function Typography (props) {
+function Typography ({children, component, variant}) {
+  const params = {
+    children,
+    component,
+    variant
+  };
+
   return (
-    <Fragment>{buildComponent(props)}</Fragment>
+    <Fragment>{buildComponent(params)}</Fragment>
   );
 }
 

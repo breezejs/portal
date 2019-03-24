@@ -28,3 +28,7 @@ overrides:
       - setupTests.js
     rules:
       import/no-extraneous-dependencies: off
+  - files:
+      - serviceWorker.js
+    rules:
+      no-console: off
