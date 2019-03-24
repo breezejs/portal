@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper should have the correct css styles 1`] = `
+.c0 {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+<main
+  className="c0"
+>
+  Content
+</main>
+`;
+
+exports[`Wrapper should render 1`] = `
+<styled.main>
+  Content
+</styled.main>
+`;

@@ -15,7 +15,7 @@ function Wrapper ({children}) {
 }
 
 Wrapper.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired
 };
 
 export default memo(Wrapper);
