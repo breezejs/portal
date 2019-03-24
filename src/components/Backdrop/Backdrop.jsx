@@ -17,12 +17,12 @@ const Overlay = styled.div`
 // TODO: Add listener for escape key
 function Backdrop ({children, show}) {
   function renderBackdrop () {
-    return(
+    return (
       <Overlay>{children}</Overlay>
     );
   }
 
-  return(
+  return (
     <Fragment>{show && renderBackdrop()}</Fragment>
   );
 }
@@ -30,6 +30,10 @@ function Backdrop ({children, show}) {
 Backdrop.propTypes = {
   children: PropTypes.element,
   show: PropTypes.bool.isRequired
+};
+
+Backdrop.defaultProps = {
+  children: null
 };
 
 export default memo(Backdrop);

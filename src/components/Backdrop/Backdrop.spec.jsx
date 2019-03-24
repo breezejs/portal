@@ -7,7 +7,7 @@ describe('Backdrop', () => {
   describe('with children', () => {
     it('should render when shown', () => {
       const result = mount(
-        <Backdrop show={true}>
+        <Backdrop show>
           <Spinner />
         </Backdrop>
       );
@@ -29,7 +29,7 @@ describe('Backdrop', () => {
   describe('without children', () => {
     it('should render when shown', () => {
       const result = shallow(
-        <Backdrop show={true} />
+        <Backdrop show />
       );
 
       expect(result).toMatchSnapshot();

@@ -9,7 +9,7 @@ const Container = styled.div`
   grid-gap: ${({gutter}) => gutter};
 `;
 
-function Grid ({children, columns = GlobalStylesTheme.gridColumns, gutter = GlobalStylesTheme.gridGutter}) {
+function Grid ({children, columns, gutter}) {
   return (
     <Container columns={columns} gutter={gutter}>{children}</Container>
   );
@@ -19,6 +19,12 @@ Grid.propTypes = {
   children: PropTypes.node,
   columns: PropTypes.number,
   gutter: PropTypes.string
+};
+
+Grid.defaultProps = {
+  children: null,
+  columns: GlobalStylesTheme.gridColumns,
+  gutter: GlobalStylesTheme.gridGutter
 };
 
 export default memo(Grid);

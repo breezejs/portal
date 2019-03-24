@@ -25,7 +25,7 @@ const Col = styled.div`
   ` : null}
 `;
 
-function GridCol ({children, lg, md, sm, xs = 12}) {
+function GridCol ({children, lg, md, sm, xs}) {
   return (
     <Col lg={lg} md={md} sm={sm} xs={xs}>{children}</Col>
   );
@@ -33,9 +33,18 @@ function GridCol ({children, lg, md, sm, xs = 12}) {
 
 GridCol.propTypes = {
   children: PropTypes.node,
-  lg: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-  md: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
-  xs: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+  lg: PropTypes.number,
+  md: PropTypes.number,
+  sm: PropTypes.number,
+  xs: PropTypes.number
+};
+
+GridCol.defaultProps = {
+  children: null,
+  lg: null,
+  md: null,
+  sm: null,
+  xs: 12
 };
 
 export default memo(GridCol);

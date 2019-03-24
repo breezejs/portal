@@ -22,7 +22,7 @@ describe('Tile', () => {
   describe('when loading', () => {
     it('should render', () => {
       const result = mount(
-        <Tile loading={true}>
+        <Tile loading>
           <Typography component="h1" variant="h1">Tile title</Typography>
 
           <Typography component="p" variant="p">Tile lead text</Typography>
@@ -34,7 +34,7 @@ describe('Tile', () => {
 
     it('should render with an image set', () => {
       const result = mount(
-        <Tile src='/path/to/image.jpg' loading={true}>
+        <Tile src='/path/to/image.jpg' loading>
           <Typography component="h1" variant="h1">Tile title</Typography>
 
           <Typography component="p" variant="p">Tile lead text</Typography>
@@ -47,7 +47,7 @@ describe('Tile', () => {
     it('should render with a link set', () => {
       const result = mount(
         <MemoryRouter keyLength={0}>
-          <Tile to='/path/to/page' loading={true}>
+          <Tile to='/path/to/page' loading>
             <Typography component="h1" variant="h1">Tile title</Typography>
 
             <Typography component="p" variant="p">Tile lead text</Typography>
@@ -61,7 +61,7 @@ describe('Tile', () => {
     it('should render with both a link and image set', () => {
       const result = mount(
         <MemoryRouter keyLength={0}>
-          <Tile to='/path/to/page' src='/path/to/image.jpg' loading={true}>
+          <Tile to='/path/to/page' src='/path/to/image.jpg' loading>
             <Typography component="h1" variant="h1">Tile title</Typography>
 
             <Typography component="p" variant="p">Tile lead text</Typography>

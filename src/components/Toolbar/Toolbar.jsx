@@ -33,7 +33,7 @@ const Header = styled.header`
   `}
 `;
 
-function Toolbar ({children, theme = 'light'}) {
+function Toolbar ({children, theme}) {
   return (
     <Header theme={theme}>{children}</Header>
   );
@@ -42,6 +42,11 @@ function Toolbar ({children, theme = 'light'}) {
 Toolbar.propTypes = {
   children: PropTypes.element,
   theme: PropTypes.oneOf(['light', 'dark'])
+};
+
+Toolbar.defaultProps = {
+  children: null,
+  theme: 'light'
 };
 
 export default memo(Toolbar);

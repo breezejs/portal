@@ -67,6 +67,8 @@ stories
       <Typography
         component={optionsKnob('Component', componentOptions, defaultOption, optionsObj)}
         variant={optionsKnob('Variant', variantOptions, defaultOption, optionsObj)}
-      >Typography</Typography>
+      >
+        Typography
+      </Typography>
     );
   });

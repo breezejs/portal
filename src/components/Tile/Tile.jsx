@@ -213,7 +213,13 @@ Tile.propTypes = {
   children: PropTypes.node.isRequired,
   loading: PropTypes.bool,
   src: PropTypes.string,
-  to: PropTypes.string,
+  to: PropTypes.string
+};
+
+Tile.defaultProps = {
+  loading: true,
+  src: null,
+  to: null
 };
 
 export default memo(Tile);

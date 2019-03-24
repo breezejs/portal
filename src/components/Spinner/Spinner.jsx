@@ -41,7 +41,7 @@ const SpinnerElement = styled.div`
   }
 `;
 
-function Spinner ({theme = 'info'}) {
+function Spinner ({theme}) {
   return (
     <SpinnerElement theme={theme} />
   );
@@ -49,6 +49,10 @@ function Spinner ({theme = 'info'}) {
 
 Spinner.propTypes = {
   theme: PropTypes.oneOf(['danger', 'info', 'primary', 'secondary', 'success', 'warning'])
+};
+
+Spinner.defaultProps = {
+  theme: 'info'
 };
 
 export default memo(Spinner);

@@ -1,4 +1,4 @@
-export const GlobalStylesTheme = {
+const GlobalStylesTheme = {
   black: '#000',
   bodyBg: '#fff',
   bodyColour: '#212529',
@@ -12,17 +12,17 @@ export const GlobalStylesTheme = {
   fontWeightBolder: 'bolder',
   gridColumns: '12',
   gridGutter: '1rem',
-  headingsColour: 'inherit',
-  headingsFontFamily: 'inherit',
-  headingsLineHeight: '1.2',
-  headingsMarginBottom: '.5rem',
-  headingsFontWeight: '500',
   h1FontSize: '2.5rem',
   h2FontSize: '2rem',
   h3FontSize: '1.75rem',
   h4FontSize: '1.5rem',
   h5FontSize: '1.25rem',
   h6FontSize: '1rem',
+  headingsColour: 'inherit',
+  headingsFontFamily: 'inherit',
+  headingsFontWeight: '500',
+  headingsLineHeight: '1.2',
+  headingsMarginBottom: '.5rem',
   info: '#17a2b8',
   labelMarginBottom: '.5rem',
   leadFontSize: '1.25rem',
@@ -44,3 +44,5 @@ export const GlobalStylesTheme = {
   zIndexBackdrop: '1000',
   zIndexSpinner: '1100'
 };
+
+export default GlobalStylesTheme;

@@ -3,7 +3,7 @@ import React, {createElement, Fragment, memo} from 'react';
 import styled from 'styled-components';
 import {GlobalStylesTheme} from '../GlobalStyles';
 
-function buildComponent (props) {
+function buildComponent (properties) {
   const coreHeadingStyles = `
     color: ${GlobalStylesTheme.headingsColour};
     font-family: ${GlobalStylesTheme.headingsFontFamily};
@@ -44,11 +44,14 @@ function buildComponent (props) {
       font-size: ${GlobalStylesTheme.fontSizeBase};
     `
   };
-  const Component = styled(props.component)`
+  const {component} = properties;
+  const Component = styled(component)`
     ${({variant}) => variants[variant]}
   `;
 
-  return createElement(Component, props);
+  Component.propTypes = {};
+
+  return createElement(Component, properties);
 }
 
 function Typography (props) {
