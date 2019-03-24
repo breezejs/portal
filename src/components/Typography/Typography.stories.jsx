@@ -1,8 +1,8 @@
 import {optionsKnob, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import GlobalStyles from '../components/GlobalStyles';
-import Typography from '../components/Typography';
+import GlobalStyles from '../GlobalStyles';
+import Typography from './Typography';
 
 const stories = storiesOf('Typography', module);
 

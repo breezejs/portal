@@ -1,15 +1,9 @@
 import {configure} from '@storybook/react';
 
+const req = require.context('../src/components', true, /\.stories\.jsx$/);
+
 function loadStories () {
-  require('../src/stories/Backdrop');
-  require('../src/stories/Grid');
-  require('../src/stories/GridCol');
-  require('../src/stories/Logo');
-  require('../src/stories/Spinner');
-  require('../src/stories/Tile');
-  require('../src/stories/Toolbar');
-  require('../src/stories/Typography');
-  require('../src/stories/Wrapper');
+  req.keys().forEach(filename => req(filename));
 }
 
 configure(loadStories, module);

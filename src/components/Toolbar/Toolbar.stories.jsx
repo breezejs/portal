@@ -1,9 +1,9 @@
 import {optionsKnob, text, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import GlobalStyles from '../components/GlobalStyles';
-import Logo from '../components/Logo';
-import Toolbar from '../components/Toolbar';
+import GlobalStyles from '../GlobalStyles';
+import Logo from '../Logo';
+import Toolbar from './Toolbar';
 
 const stories = storiesOf('Toolbar', module);
 

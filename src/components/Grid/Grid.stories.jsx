@@ -1,9 +1,9 @@
 import {number, text, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import GlobalStyles from '../components/GlobalStyles';
-import Grid from '../components/Grid';
-import GridCol from '../components/GridCol';
+import GlobalStyles from '../GlobalStyles';
+import GridCol from '../GridCol';
+import Grid from './Grid';
 
 const stories = storiesOf('Grid', module);
 

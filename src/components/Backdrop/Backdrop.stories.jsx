@@ -1,9 +1,9 @@
 import {boolean, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import Backdrop from '../components/Backdrop';
-import GlobalStyles from '../components/GlobalStyles';
-import Spinner from '../components/Spinner';
+import GlobalStyles from '../GlobalStyles';
+import Spinner from '../Spinner';
+import Backdrop from './Backdrop';
 
 const stories = storiesOf('Backdrop', module);
 

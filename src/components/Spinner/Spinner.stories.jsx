@@ -1,8 +1,8 @@
 import {optionsKnob, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import GlobalStyles from '../components/GlobalStyles';
-import Spinner from '../components/Spinner';
+import GlobalStyles from '../GlobalStyles';
+import Spinner from './Spinner';
 
 const stories = storiesOf('Spinner', module);
 

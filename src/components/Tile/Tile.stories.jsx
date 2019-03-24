@@ -2,11 +2,11 @@ import {boolean, text, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
 import {MemoryRouter} from 'react-router';
-import GlobalStyles from '../components/GlobalStyles';
-import Grid from '../components/Grid';
-import GridCol from '../components/GridCol';
-import Tile from '../components/Tile';
-import Typography from '../components/Typography';
+import GlobalStyles from '../GlobalStyles';
+import Grid from '../Grid';
+import GridCol from '../GridCol';
+import Typography from '../Typography';
+import Tile from './Tile';
 
 const stories = storiesOf('Tile', module);
 

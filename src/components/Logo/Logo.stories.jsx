@@ -1,8 +1,8 @@
 import {text, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import GlobalStyles from '../components/GlobalStyles';
-import Logo from '../components/Logo';
+import GlobalStyles from '../GlobalStyles';
+import Logo from './Logo';
 
 const stories = storiesOf('Logo', module);
 

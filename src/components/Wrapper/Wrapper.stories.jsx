@@ -1,8 +1,8 @@
 import {text, withKnobs} from '@storybook/addon-knobs';
 import {storiesOf} from '@storybook/react';
 import React from 'react';
-import GlobalStyles from '../components/GlobalStyles';
-import Wrapper from '../components/Wrapper';
+import GlobalStyles from '../GlobalStyles';
+import Wrapper from './Wrapper';
 
 const stories = storiesOf('Wrapper', module);
 
