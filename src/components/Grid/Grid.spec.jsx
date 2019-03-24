@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import {mount, shallow} from 'enzyme';
 import React from 'react';
 import Grid from './Grid';
 import GridCol from '../GridCol';
@@ -22,6 +22,14 @@ describe('Grid', () => {
 
       expect(result).toMatchSnapshot();
     });
+
+    it('should have the correct css styles', () => {
+      const result = mount(
+        <Grid />
+      );
+
+      expect(result.find('div')).toMatchSnapshot();
+    });
   });
 
   describe('with no gutter', () => {
@@ -42,6 +50,14 @@ describe('Grid', () => {
 
       expect(result).toMatchSnapshot();
     });
+
+    it('should have the correct css styles', () => {
+      const result = mount(
+        <Grid gutter='0' />
+      );
+
+      expect(result.find('div')).toMatchSnapshot();
+    });
   });
 
   describe('with custom number of columns', () => {
@@ -61,6 +77,14 @@ describe('Grid', () => {
       );
 
       expect(result).toMatchSnapshot();
+    });
+
+    it('should have the correct css styles', () => {
+      const result = mount(
+        <Grid columns={10} />
+      );
+
+      expect(result.find('div')).toMatchSnapshot();
     });
   });
 });
