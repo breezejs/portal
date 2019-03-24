@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import {mount, shallow} from 'enzyme';
 import React from 'react';
 import Backdrop from './Backdrop';
 import Spinner from '../Spinner';
@@ -6,7 +6,7 @@ import Spinner from '../Spinner';
 describe('Backdrop', () => {
   describe('with children', () => {
     it('should render when shown', () => {
-      const result = shallow(
+      const result = mount(
         <Backdrop show={true}>
           <Spinner />
         </Backdrop>

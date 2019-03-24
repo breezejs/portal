@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridCol with default values should have the correct css styles 1`] = `null`;
+
+exports[`GridCol with default values should render 1`] = `
+<styled.div
+  xs={12}
+/>
+`;
+
+exports[`GridCol with default values should render with children 1`] = `
+.c0 {
+  grid-column: span 12;
+  position: relative;
+}
+
+<GridCol>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  grid-column: ",
+            [Function],
+            ";
+  position: relative;
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    xs={12}
+  >
+    <div
+      className="c0"
+    >
+      Hello world
+    </div>
+  </StyledComponent>
+</GridCol>
+`;
+
+exports[`GridCol with lg set should have the correct css styles 1`] = `null`;
+
+exports[`GridCol with lg set should render 1`] = `
+<styled.div
+  lg={2}
+  md={4}
+  sm={6}
+  xs={12}
+/>
+`;
+
+exports[`GridCol with lg set should render with children 1`] = `
+.c0 {
+  grid-column: span 12;
+  position: relative;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    grid-column: span 2;
+  }
+}
+
+<GridCol
+  lg={2}
+  md={4}
+  sm={6}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  grid-column: ",
+            [Function],
+            ";
+  position: relative;
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    lg={2}
+    md={4}
+    sm={6}
+    xs={12}
+  >
+    <div
+      className="c0"
+    >
+      Hello world
+    </div>
+  </StyledComponent>
+</GridCol>
+`;
+
+exports[`GridCol with md set should have the correct css styles 1`] = `null`;
+
+exports[`GridCol with md set should render 1`] = `
+<styled.div
+  md={4}
+  sm={6}
+  xs={12}
+/>
+`;
+
+exports[`GridCol with md set should render with children 1`] = `
+.c0 {
+  grid-column: span 12;
+  position: relative;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column: span 4;
+  }
+}
+
+<GridCol
+  md={4}
+  sm={6}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  grid-column: ",
+            [Function],
+            ";
+  position: relative;
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    md={4}
+    sm={6}
+    xs={12}
+  >
+    <div
+      className="c0"
+    >
+      Hello world
+    </div>
+  </StyledComponent>
+</GridCol>
+`;
+
+exports[`GridCol with sm set should have the correct css styles 1`] = `null`;
+
+exports[`GridCol with sm set should render 1`] = `
+<styled.div
+  sm={6}
+  xs={12}
+/>
+`;
+
+exports[`GridCol with sm set should render with children 1`] = `
+.c0 {
+  grid-column: span 12;
+  position: relative;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    grid-column: span 6;
+  }
+}
+
+<GridCol
+  sm={6}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  grid-column: ",
+            [Function],
+            ";
+  position: relative;
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    sm={6}
+    xs={12}
+  >
+    <div
+      className="c0"
+    >
+      Hello world
+    </div>
+  </StyledComponent>
+</GridCol>
+`;
+
+exports[`GridCol with xs set should have the correct css styles 1`] = `null`;
+
+exports[`GridCol with xs set should render 1`] = `
+<styled.div
+  xs={6}
+/>
+`;
+
+exports[`GridCol with xs set should render with children 1`] = `
+.c0 {
+  grid-column: span 6;
+  position: relative;
+}
+
+<GridCol
+  xs={6}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  grid-column: ",
+            [Function],
+            ";
+  position: relative;
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    xs={6}
+  >
+    <div
+      className="c0"
+    >
+      Hello world
+    </div>
+  </StyledComponent>
+</GridCol>
+`;

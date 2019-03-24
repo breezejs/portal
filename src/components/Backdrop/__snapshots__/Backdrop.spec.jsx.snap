@@ -3,11 +3,164 @@
 exports[`Backdrop with children should render when not shown 1`] = `<Fragment />`;
 
 exports[`Backdrop with children should render when shown 1`] = `
-<Fragment>
-  <styled.div>
-    <Component />
-  </styled.div>
-</Fragment>
+.c0 {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.c1 {
+  height: 100px;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  position: fixed;
+  top: 50%;
+  width: 100px;
+  z-index: 1100;
+}
+
+.c1::before {
+  content: "Loading...";
+  height: 100px;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+}
+
+.c1:not(:required)::before {
+  -webkit-animation: spinner .6s linear infinite;
+  animation: spinner .6s linear infinite;
+  border: 5px solid #e6e6e6;
+  border-radius: 50%;
+  content: "";
+}
+
+<Backdrop
+  show={true}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  background-color: ",
+            "#000",
+            ";
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: ",
+            "1000",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    >
+      <Spinner>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+    
+  }
+
+  height: 100px;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  position: fixed;
+  top: 50%;
+  width: 100px;
+  z-index: ",
+                  "1100",
+                  ";
+
+  ::before {
+    content: \\"Loading...\\";
+    height: 100px;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+  }
+
+  :not(:required) {
+    ::before {
+      animation: spinner .6s linear infinite;
+      border: 5px solid ",
+                  "#e6e6e6",
+                  ";
+      border-radius: 50%;
+      border-top-color: ",
+                  [Function],
+                  ";
+      content: \\"\\";
+    }
+  }
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c1"
+          />
+        </StyledComponent>
+      </Spinner>
+    </div>
+  </StyledComponent>
+</Backdrop>
 `;
 
 exports[`Backdrop without children should render when not shown 1`] = `<Fragment />`;
