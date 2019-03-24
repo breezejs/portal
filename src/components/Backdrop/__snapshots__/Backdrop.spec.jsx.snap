@@ -39,6 +39,7 @@ exports[`Backdrop with children should render when shown 1`] = `
   animation: spinner .6s linear infinite;
   border: 5px solid #e6e6e6;
   border-radius: 50%;
+  border-top-color: #17a2b8;
   content: "";
 }
 
@@ -152,6 +153,7 @@ exports[`Backdrop with children should render when shown 1`] = `
             }
           }
           forwardedRef={null}
+          theme="info"
         >
           <div
             className="c1"

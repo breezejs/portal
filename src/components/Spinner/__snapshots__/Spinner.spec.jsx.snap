@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner with danger theme should render 1`] = `
+<styled.div
+  theme="danger"
+/>
+`;
+
+exports[`Spinner with info theme should render 1`] = `
+<styled.div
+  theme="info"
+/>
+`;
+
+exports[`Spinner with no theme set should render and default to info 1`] = `
+<styled.div
+  theme="info"
+/>
+`;
+
+exports[`Spinner with primary theme should render 1`] = `
+<styled.div
+  theme="primary"
+/>
+`;
+
+exports[`Spinner with secondary theme should render 1`] = `
+<styled.div
+  theme="secondary"
+/>
+`;
+
+exports[`Spinner with success theme should render 1`] = `
+<styled.div
+  theme="success"
+/>
+`;
+
+exports[`Spinner with warn theme should render 1`] = `
+<styled.div
+  theme="warn"
+/>
+`;

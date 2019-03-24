@@ -41,7 +41,7 @@ const SpinnerElement = styled.div`
   }
 `;
 
-function Spinner ({theme}) {
+function Spinner ({theme = 'info'}) {
   return (
     <SpinnerElement theme={theme} />
   );
