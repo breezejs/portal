@@ -34,6 +34,13 @@ const loadingStyles = css`
   background-size: 200% 100%;
 `;
 
+const wrapperStyles = css`
+  backface-visibility: hidden;
+  border: 3px solid transparent;
+  color: ${GlobalStylesTheme.white};
+  display: block;
+`;
+
 const Article = styled.article`
   background-color: ${GlobalStylesTheme.light};
   overflow: hidden;
@@ -137,12 +144,13 @@ const Header = styled.header`
   }
 `;
 
+const TileWrapper = styled.div`
+  ${wrapperStyles}
+`;
+
 const TileLink = styled(Link)`
-  backface-visibility: hidden;
-  border: 3px solid transparent;
-  color: ${GlobalStylesTheme.white};
+  ${wrapperStyles}
   cursor: pointer;
-  display: block;
   transition: background-color, border-color, color;
   transition-duration: .3s;
   transition-property: background-color, border-color, color;
@@ -196,7 +204,9 @@ function Tile ({children, loading = true, src, to}) {
     );
   }
 
-  return tile;
+  return (
+    <TileWrapper>{tile}</TileWrapper>
+  );
 }
 
 Tile.propTypes = {

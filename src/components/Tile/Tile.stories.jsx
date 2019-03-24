@@ -19,7 +19,7 @@ stories
     </div>
   ))
   .addDecorator((storyFn) => (
-    <MemoryRouter initialEntries={['/']}>{storyFn()}</MemoryRouter>
+    <MemoryRouter>{storyFn()}</MemoryRouter>
   ))
   .add('without a link', () => (
     <Grid>
@@ -35,11 +35,7 @@ stories
   .add('with a link', () => (
     <Grid>
       <GridCol xs={4}>
-        <Tile
-          src='https://via.placeholder.com/400'
-          to={text('To', '/')}
-          loading={boolean('Loading', false)}
-        >
+        <Tile src='https://via.placeholder.com/400' to={text('To', '/')} loading={boolean('Loading', false)}>
           <Typography component="h1" variant="h1">Tile title</Typography>
 
           <Typography component="p" variant="p">Tile lead text</Typography>
