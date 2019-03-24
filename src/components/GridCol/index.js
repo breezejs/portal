@@ -1,1 +1,1 @@
-export {default as default} from './GridCol';
+export {default} from './GridCol';

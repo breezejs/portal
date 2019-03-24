@@ -1,1 +1,1 @@
-export {default as default} from './Backdrop';
+export {default} from './Backdrop';
