@@ -15,14 +15,12 @@ exports[`Grid with custom number of columns should have the correct css styles 1
 exports[`Grid with custom number of columns should render 1`] = `
 <styled.div
   columns={10}
-  gutter="1rem"
 />
 `;
 
 exports[`Grid with custom number of columns should render with a child components 1`] = `
 <styled.div
   columns={10}
-  gutter="1rem"
 >
   <Component />
 </styled.div>
@@ -40,18 +38,10 @@ exports[`Grid with default values should have the correct css styles 1`] = `
 />
 `;
 
-exports[`Grid with default values should render 1`] = `
-<styled.div
-  columns="12"
-  gutter="1rem"
-/>
-`;
+exports[`Grid with default values should render 1`] = `<styled.div />`;
 
 exports[`Grid with default values should render with a child components 1`] = `
-<styled.div
-  columns="12"
-  gutter="1rem"
->
+<styled.div>
   <Component />
 </styled.div>
 `;
@@ -70,14 +60,12 @@ exports[`Grid with no gutter should have the correct css styles 1`] = `
 
 exports[`Grid with no gutter should render 1`] = `
 <styled.div
-  columns="12"
   gutter="0"
 />
 `;
 
 exports[`Grid with no gutter should render with a child components 1`] = `
 <styled.div
-  columns="12"
   gutter="0"
 >
   <Component />

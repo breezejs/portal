@@ -12,11 +12,7 @@ exports[`Spinner with info theme should render 1`] = `
 />
 `;
 
-exports[`Spinner with no theme set should render and default to info 1`] = `
-<styled.div
-  theme="info"
-/>
-`;
+exports[`Spinner with no theme set should render and default to info 1`] = `<styled.div />`;
 
 exports[`Spinner with primary theme should render 1`] = `
 <styled.div

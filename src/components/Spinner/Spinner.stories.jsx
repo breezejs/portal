@@ -5,7 +5,6 @@ import GlobalStyles from '../GlobalStyles';
 import Spinner from './Spinner';
 
 const stories = storiesOf('Spinner', module);
-
 const options = {
   danger: 'danger',
   info: 'info',

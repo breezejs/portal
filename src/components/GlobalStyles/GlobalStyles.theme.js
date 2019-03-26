@@ -2,15 +2,34 @@ const GlobalStylesTheme = {
   black: '#000',
   bodyBg: '#fff',
   bodyColour: '#212529',
+  btn: {
+    disabledOpacity: '.65',
+    lg: {
+      fontSize: '1.25rem',
+      paddingX: '1rem',
+      paddingY: '.5rem'
+    },
+    md: {
+      fontSize: '1rem',
+      paddingX: '.75rem',
+      paddingY: '.375rem'
+    },
+    sm: {
+      fontSize: '.875rem',
+      paddingX: '.5rem',
+      paddingY: '.25rem'
+    }
+  },
   danger: '#dc3545',
   dark: '#343a40',
   dtFontWeight: '700',
+  // eslint-disable-next-line max-len
   fontFamilyBase: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
   fontFamilyMonospace: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
   fontSizeBase: '1rem',
   fontWeightBase: '400',
   fontWeightBolder: 'bolder',
-  gridColumns: '12',
+  gridColumns: 12,
   gridGutter: '1rem',
   h1FontSize: '2.5rem',
   h2FontSize: '2rem',

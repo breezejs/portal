@@ -12,6 +12,10 @@ rules:
   comma-dangle:
     - error
     - never
+  max-len:
+    - error
+    - 140
+    - 4
   object-curly-spacing:
     - error
     - never

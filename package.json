@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "airbnb-prop-types": "^2.12.0",
     "axios": "^0.18.0",
     "connected-react-router": "^6.3.2",
     "history": "^4.9.0",
@@ -33,6 +34,7 @@
     "@storybook/addon-links": "^5.0.3",
     "@storybook/addons": "^5.0.3",
     "@storybook/react": "^5.0.3",
+    "@types/airbnb-prop-types": "^2.11.0",
     "@types/enzyme": "^3.9.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/http-proxy-middleware": "^0.19.2",
@@ -55,6 +57,7 @@
     "eslint-plugin-react": "^7.12.4",
     "http-proxy-middleware": "^0.19.1",
     "jest-enzyme": "^7.0.2",
+    "jest-prop-type-error": "^1.1.0",
     "jest-styled-components": "^6.3.1",
     "react-scripts": "2.1.8",
     "typescript": "^3.3.4000"

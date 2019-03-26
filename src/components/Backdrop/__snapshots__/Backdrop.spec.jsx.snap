@@ -46,20 +46,21 @@ exports[`Backdrop with children should render when shown 1`] = `
 <Backdrop
   show={true}
 >
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "sc-bdVaJa",
-          "isStatic": true,
-          "lastClassName": "c0",
-          "rules": Array [
-            "
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
   background-color: ",
-            "#000",
-            ";
+              "#000",
+              ";
   bottom: 0;
   left: 0;
   opacity: .5;
@@ -67,38 +68,41 @@ exports[`Backdrop with children should render when shown 1`] = `
   right: 0;
   top: 0;
   z-index: ",
-            "1000",
-            ";
+              "1000",
+              ";
 ",
-          ],
-        },
-        "displayName": "styled.div",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "sc-bdVaJa",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
       }
-    }
-    forwardedRef={null}
-  >
-    <div
-      className="c0"
+      forwardedRef={null}
     >
-      <Spinner>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bwzfXH",
-                "isStatic": false,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "
+      <div
+        className="c0"
+      >
+        <Spinner>
+          <styled.div
+            theme="info"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
   @keyframes spinner {
     to {
       transform: rotate(360deg);
@@ -113,8 +117,8 @@ exports[`Backdrop with children should render when shown 1`] = `
   top: 50%;
   width: 100px;
   z-index: ",
-                  "1100",
-                  ";
+                      "1100",
+                      ";
 
   ::before {
     content: \\"Loading...\\";
@@ -130,38 +134,40 @@ exports[`Backdrop with children should render when shown 1`] = `
     ::before {
       animation: spinner .6s linear infinite;
       border: 5px solid ",
-                  "#e6e6e6",
-                  ";
+                      "#e6e6e6",
+                      ";
       border-radius: 50%;
       border-top-color: ",
-                  [Function],
-                  ";
+                      [Function],
+                      ";
       content: \\"\\";
     }
   }
 ",
-                ],
-              },
-              "displayName": "styled.div",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bwzfXH",
-              "target": "div",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          theme="info"
-        >
-          <div
-            className="c1"
-          />
-        </StyledComponent>
-      </Spinner>
-    </div>
-  </StyledComponent>
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              theme="info"
+            >
+              <div
+                className="c1"
+              />
+            </StyledComponent>
+          </styled.div>
+        </Spinner>
+      </div>
+    </StyledComponent>
+  </styled.div>
 </Backdrop>
 `;
 

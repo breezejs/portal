@@ -49,8 +49,6 @@ function buildComponent (properties) {
     ${({variant}) => variants[variant]}
   `;
 
-  Component.propTypes = {};
-
   return createElement(Component, properties);
 }
 
