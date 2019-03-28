@@ -1,22 +1,24 @@
-import React, {Fragment} from 'react';
-import GlobalStyles from './components/GlobalStyles';
-import Toolbar from './components/Toolbar';
-import Logo from './components/Logo';
-import Wrapper from './components/Wrapper';
+import {ConnectedRouter} from 'connected-react-router';
+import React from 'react';
+import {Provider} from 'react-redux';
+import {Route, Switch} from 'react-router-dom';
+import Layout from './components/Layout';
+import Article from './containers/Article';
+import Home from './containers/Home';
+import store, {history} from './store';
 
 function App () {
-  const title = 'BreezeJS';
-
   return (
-    <Fragment>
-      <GlobalStyles />
-
-      <Toolbar>
-        <Logo>{title}</Logo>
-      </Toolbar>
-
-      <Wrapper>Hello world</Wrapper>
-    </Fragment>
+    <Provider store={store()}>
+      <Layout>
+        <ConnectedRouter history={history}>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/article/:id' component={Article} />
+          </Switch>
+        </ConnectedRouter>
+      </Layout>
+    </Provider>
   );
 }
 

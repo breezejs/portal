@@ -12,6 +12,7 @@ rules:
   comma-dangle:
     - error
     - never
+  import/named: off
   max-len:
     - error
     - 140
@@ -24,6 +25,9 @@ rules:
   space-before-function-paren:
     - error
     - always
+  quotes:
+    - error
+    - single
 
 overrides:
   - files:

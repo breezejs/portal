@@ -178,18 +178,15 @@ const Image = styled.img`
 `;
 
 function Tile ({children, loading = true, src, to}) {
-  function displayImage () {
-    return (
-      <Figure>
-        {!loading && <Image src={src} />}
-      </Figure>
-    );
-  }
-
+  const displayImage = (
+    <Figure>
+      {!loading && <Image src={src} />}
+    </Figure>
+  );
   const tile = (
     <Article>
       <Container>
-        {src && displayImage()}
+        {src && displayImage}
 
         <Header>
           <Content>{!loading && children}</Content>
